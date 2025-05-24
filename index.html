@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heroes Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h2>New Hero</h2>
+        <form id="create-hero-form">
+          <label for="new-hero">New hero name:</label>
+          <input type="text" id="new-hero" name="hero" required />
+          <label for="new-hero-level">New hero level:</label>
+          <input type="text" id="new-hero-level" name="hero-level" required />
+          <!-- <button type="submit" id="create">Create</button>
+          <button type="submit" id="update">Update</button> -->
+          <div class="buttons-container">
+            <button type="submit" id="create">Create</button>
+            <button type="submit" id="update">Update</button>
+          </div>
+        </form>
+      </section>
+      <section>
+        <h2>Heroes List</h2>
+        <!-- <ul id="heroes" aria-label="List of heroes"></ul> -->
+         <table id="heroes" aria-label="List of heroes"></table>
+      </section>
+      
+      <button id="delete" disabled>Delete selected hero</button>
+    </main>
+  </body>
+</html>
